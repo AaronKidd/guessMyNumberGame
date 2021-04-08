@@ -16,6 +16,7 @@ document.querySelector(".check").addEventListener('click', () => {
             document.querySelector(".message").textContent = "Correct well done!";
             document.querySelector("body").style.backgroundColor = "#60b347";
             document.querySelector(".number").style.width = "30rem";
+            document.querySelector(".number").textContent = guess
 
             if (document.querySelector(".highscore").textContent < document.querySelector(".score").textContent) {
                 document.querySelector(".highscore").textContent = document.querySelector(".score").textContent
@@ -34,4 +35,5 @@ document.querySelector(".again").addEventListener('click', () => {
     document.querySelector(".score").textContent = 20
     document.querySelector("body").style.backgroundColor = "#222";
     document.querySelector(".number").style.width = "15rem";
+    document.querySelector(".number").textContent = "?"
 })
